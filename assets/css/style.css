@@ -835,6 +835,19 @@ section {
   fill: #f05030;
 }
 
+.services .iconbox-blue-cl i {
+  color: #0075cf;
+}
+
+.services .iconbox-blue-cl:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-blue-cl:hover .icon path {
+  fill: #0075cf;
+}
+
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
