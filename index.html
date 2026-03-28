@@ -1,730 +1,595 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <title>Geanny Rodrigues</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geanny Rodrigues | Desenvolvedora Full-Stack</title>
+  <meta name="description" content="Portfólio de Geanny Rodrigues — Desenvolvedora Full-Stack apaixonada por criar aplicações web funcionais e elegantes.">
 
-  <link href="img/png/Imagem Adaptada verde.png" rel="icon">
-  <link href="img/png/Imagem Adaptada verde.png" rel="apple-touch-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="img/png/Imagem Adaptada verde.png">
+  <link rel="apple-touch-icon" href="img/png/Imagem Adaptada verde.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <header id="header" class="header header-hide">
-    <div class="container">
-      <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">Geanny Rodrigues</a></h1>
-      </div>
+  <!-- ======== Navigation ======== -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#hero" class="nav-logo">GR<span>.</span></a>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#about-us">Sobre</a></li>
-          <li><a href="#get-started">Formação e Experiência</a></li>
-          <li><a href="#features">Conhecimentos</a></li>
-          <li><a href="#pricing">Certificados</a></li>
-          <li><a href="#team">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#experience" class="nav-link">Experiência</a></li>
+        <li><a href="#education" class="nav-link">Formação</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#certificates" class="nav-link">Certificados</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
   </header>
-  <!-- #header -->
 
-  <!--==========================
-    Home 
-  ============================-->
-  <section id="hero" class="wow fadeIn">
-    <div class="hero-container">
-      <h3  style="width: 400px; max-width: 400px; align-items: flex-end; text-align: left;">Olá! Sou</h3>
-      <h1>Geanny Rodrigues</h1>
-      <h2>Desenvolvedora Full-Stack.</h2>
-      <img src="img/Plano de Fundo.png" alt="Hero Imgs">
-      <a href="https://drive.google.com/file/d/15SC7oyu0L_Y5zRKyo6sWc9tf2PdGjkAC/view?usp=share_link" class="btn-get-started scrollto">Download CV</a>
-      <div class="btns">
-        <a href="https://api.whatsapp.com/send?phone=5581981493288"><i class="fa fa-whatsapp fa-sm"></i> Whatsapp</a>
-        <a href="mailto:geanny.arodrigues@gmail.com"><i class="fa fa-envelope fa-sm"></i> E-mail</a>
-        <a href="https://github.com/GeannyR"><i class="fa fa-github fa-sm"></i> GitHub</a>
-        <a href="https://www.linkedin.com/in/geanny-arodrigues/"><i class="fa fa-linkedin fa-sm"></i> LinkedIn</a>
+  <!-- ======== Hero ======== -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-name reveal">Geanny Rodrigues</h1>
+        <p class="hero-role reveal">Desenvolvedora Full-Stack</p>
+        <p class="hero-meta reveal">Nomus · Ciência da Computação · Recife, PE</p>
+
+        <div class="hero-actions reveal">
+          <a href="https://drive.google.com/file/d/15SC7oyu0L_Y5zRKyo6sWc9tf2PdGjkAC/view?usp=share_link" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline">Entre em contato</a>
+        </div>
+
+        <div class="hero-social reveal">
+          <a href="https://github.com/GeannyR" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/geanny-arodrigues/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:geanny.arodrigues@gmail.com" aria-label="E-mail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5581981493288" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <p class="hero-status reveal">
+          <span class="status-dot"></span>
+          Disponível para oportunidades
+        </p>
       </div>
     </div>
   </section>
-  <!-- home -->
 
-  
-  <!--==========================
-    Sobre
-  ============================-->
-  <section id="about-us" class="about-us padd-section wow fadeInUp">
+  <!-- ======== About ======== -->
+  <section id="about" class="section">
     <div class="container">
-      <div class="row justify-content-center" >
-
-        <div class="col-md-5 col-lg-4">
-          <img src="img/png/Imagem Adaptada verde.png" alt="About" style="padding-top: 70px;">
-        </div>
-
-        <div class="col-md-7 col-lg-7">
-          <div class="about-content">
-
-            <h2><b>Descrição</b></h2>
-            <hr>
-            <p style="text-align: justify;font-size: 15px;">Estudante de Ciência da Computação com habilidades em desenvolvimento front-end e back-end de aplicações web. Atualmente, sou Júnior em desenvolvimento, onde aplico meu conhecimento em ambas as áreas. Sou apaixonada por aprender e crescer constantemente no campo de desenvolvimento de software e pela criação de aplicações web funcionais.
-            </p>
-
-            <ul class="list-unstyled"> <h4>Competências</h4>
-              <li><i class="fa fa-angle-right"></i>Flexibilidade e adaptação.</li>
-              <li><i class="fa fa-angle-right"></i>Inteligência emocional.</li>
-              <li><i class="fa fa-angle-right"></i>Resolução de problemas.</li>
-              <li><i class="fa fa-angle-right"></i>Pensamento crítico.</li>
-              <li><i class="fa fa-angle-right"></i>Boa comunicação.</li>
-            </ul>
-
-          </div>
-        </div>
-
+      <div class="section-header reveal">
+        <span class="section-tag">Sobre mim</span>
+        <h2 class="section-title">Sobre</h2>
       </div>
-    </div>
-  </section>
-<!--==========================
-   Formação
-  ============================-->
-  <section id="get-started" class="padd-section text-center wow fadeInUp">
 
-    <div class="container">
-      <div class="section-title text-center">
-
-        <h2>Formação e Experiência</h2>
-
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-6 col-lg-6">
-          <div class="feature-block">
-            <h4>Formação Acadêmica</h4>
-
-            <img src="img/svg/form.svg" alt="img" class="img-fluid">
-            <h6>Ciência da Computação</h6>
-            <p></p>
-            <h5>Centro Universitário União das Américas Descomplica.</h5>
-            <p>com ênfase em Full Stack Dev.
-            <br>Graduação: 2022 - Atual (7° Período)</p> 
-            <hr>
-            <h6>Técnico em Administração</h6>
-            <p></p>
-            <h5>Antonio Carlos Gomes da Costa (ETE).</h5>
-            <p>02/2019 – 09/2021.</p>
-            <hr>
-            <h6>Web Design</h6>
-            <p></p>
-            <h5>IDITEC.</h5>
-            <p>02/2014 – 10/2015.</p>
-          </div>
-        </div>
-
-        
-        <div class="col-md-6 col-lg-6">
-          <div class="feature-block">
-            <h4>Experiência Profissional</h4>
-
-            <img src="img/png/job-search.png" alt="img" class="img-fluid">
-            <h6>Desenvolvedora Júnior Full Stack</h6>
-            <p></p>
-            <h5>Nomus</h5>
-            <p>09/2024 – Atualmente</p>
-            <p style="text-align: justify;">Análise e desenvolvimento de sistemas; desenvolvimento de novas funcionalidades; correção de bugs encontrados; análise e especificação de melhorias no sistema. Linguagem predominante em Java e SQL, utilização de JavaScript, JQuery entre outros.</p>
-            <p></p>
-            <h6>Estagiária em Desenvolvimento Java</h6>
-            <p></p>
-            <h5>Nomus</h5>
-            <p>06/2023 – 09/2024</p>
-            <p style="text-align: justify;">Auxiliar na análise e desenvolvimento de sistemas; desenvolvimento de novas funcionalidades; correção de bugs encontrados; análise e especificação de melhorias no sistema. Linguagem predominante em Java e SQL, utilização de JavaScript, JQuery entre outros.</p>
-            <p></p>
-            <h6>Analista de Atendimento Receptivo e Ativo</h6>
-            <p></p>
-            <h5>CSU Digital</h5>
-            <p>09/2021 – 12/2024</p>
-            <p style="text-align: justify;">Atribuições: Atendimento pro Chat/Voz realizando tratativas referentes a pagamentos, pedido entregue errado ou item faltante, cancelamento e alteração de pedidos ou informações pertinentes, utilizando programas como <b>Zendesk</b>, <b>Avaya</b> e <b>Cisco</b>.</p>
-
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-  </section>
-
-  <!--==========================
-    Conhecimentos
-  ============================-->
-
-  <section id="features" class="padd-section text-center wow fadeInUp">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Conhecimentos</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <h4 style="display: flex; width: 100px;">Front-End</h4>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/html-5.png" alt="img" class="img-fluid">
-            <h4>HTML 5</h4>
-            <p>
-              <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" style="width: 95%;    background-color: #fc490b!important;"></div>
-              </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Estudante de <strong>Ciência da Computação</strong> com experiência prática em
+            desenvolvimento <strong>front-end e back-end</strong> de aplicações web. Atualmente
+            atuo como Desenvolvedora Júnior Full-Stack na <strong>Nomus</strong>, onde trabalho
+            com Java, SQL, JavaScript e JQuery no desenvolvimento e manutenção de sistemas.
           </p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/css-3.png" alt="img" class="img-fluid">
-            <h4>CSS</h4>
-            <p>
-              <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
-              </div>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/JAVASCRIPT.png" alt="img" class="img-fluid">
-            <h4>JavaScript</h4>
-            <p><div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" style="width: 50%"></div>
-            </div></p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <h4 style="display: flex; width: 100px;">Back-End</h4>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/java (1).png" alt="img" class="img-fluid">
-            <h4>Java</h4>
-            <p><div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%;background-color: #73a1fb!important;"></div>
-            </div></p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/python.png" alt="img" class="img-fluid">
-            <h4>Python</h4>
-            <p>
-              <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 20%;background-color: #78e0ea;"></div>
-              </div>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/servidor.png" class="img-fluid">
-            <h4>SQL</h4>
-            <p><div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 20%;background-color: #9facba;"></div>
-            </div>
+          <p>
+            Meu foco está em desenvolver soluções bem construídas, com código organizado
+            e atenção à experiência do usuário. Busco evoluir continuamente como profissional
+            e contribuir com entregas de qualidade.
           </p>
-          </div>
         </div>
 
-
-      </div>
-    </div>
-
-    
-    <div class="container">
-      <div class="row">
-        <h4 style="display: flex; width: 100px;">IDE</h4>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/eclipse.png" alt="img" class="img-fluid">
-            <h4>Eclipse</h4>
-            <p>
-              <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 50%;background-color: #433480;"></div>
-              </div>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/intelij.png" alt="img" class="img-fluid">
-            <h4>InteliJ</h4>
-            <p>
-              <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 20%;background-color: #dd3874;"></div>
-              </div>
-            </p>
-          </div>
-        </div>
-
-    
-
-
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <h4 style="display: flex; width: 100px;">Framework</h4>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/bootstrap.png" alt="img" class="img-fluid">
-            <h4>Bootstrap</h4>
-            <p>
-              <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 65%;background-color: #5e3b7f;"></div>
-              </div>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/jquery.png" alt="img" class="img-fluid">
-            <h4>JQuery</h4>
-            <p>
-              <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 65%;background-color: #0868ac;"></div>
-              </div>
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-
-        <h4 style="display: flex; width: 100px;">Extras</h4>
-        <p></p>
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/git.png" class="img-fluid">
-            <h4>GIT</h4>
-            <p> <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%;background-color: #f05033!important;"></div>
-            </div></p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/photoshop.png" alt="img" class="img-fluid">
-            <h4>Photoshop</h4>
-            <p><div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 90%;background-color: #001834;"></div>
-            </div></p>
-          
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/ilustrador.png" alt="img" class="img-fluid">
-            <h4>Illustrator</h4>
-            <p><div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 85%;background-color: #6d4c13;"></div>
-            </div></p>
-          
-          </div>
-        </div>
-
-
-        <div class="feature-block">
-          <img src="img/png/vscode.png" alt="img" class="img-fluid">
-          <h4>Visual Studio Code</h4>
-          <p><div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 60%;background-color: #23a9f2;"></div>
-          </div></p>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/wordpress.png" alt="img" class="img-fluid">
-            <h4>WordPress</h4>
-            <p><div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;background-color: #1c769b;"></div>
-            </div></p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src="img/png/office.png" alt="img" class="img-fluid">
-            <h4>Pacote Office</h4>
-            <p>
-              <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" style="width: 100%;    background-color: #fc490b!important;"></div>
-              </div>
-          </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-<!--==========================
-    Certificados
-  ============================-->
-  <section id="pricing" class="padd-section text-center wow fadeInUp">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Certificados</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-7 col-lg-3">
-          <div class="block-pricing">
-            <div class="table">
-              <h4>Web Design Responsivo</h4>
-              <img src="img/png/design-responsivo.png" alt="img" class="img-fluid">
-              <div class="table_btn">
-                  <h5><b>300h</b> - FreecodeCamp </p></h5>
-                <a href="https://www.freecodecamp.org/certification/geannyr/responsive-web-design" class="btn"><i class="fa fa-check"></i>Verificar</a>
-              </div>
+        <div class="about-competencies reveal">
+          <h3 class="competencies-title">Competências</h3>
+          <div class="competency-list">
+            <div class="competency-item">
+              <i class="fa-solid fa-arrows-rotate"></i>
+              <span>Flexibilidade e adaptação</span>
+            </div>
+            <div class="competency-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>Inteligência emocional</span>
+            </div>
+            <div class="competency-item">
+              <i class="fa-solid fa-puzzle-piece"></i>
+              <span>Resolução de problemas</span>
+            </div>
+            <div class="competency-item">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Pensamento crítico</span>
+            </div>
+            <div class="competency-item">
+              <i class="fa-solid fa-comments"></i>
+              <span>Boa comunicação</span>
             </div>
           </div>
         </div>
-
-        <div class="col-md-7 col-lg-3">
-          <div class="block-pricing">
-            <div class="table">
-              <h4>Montagem e Manutenção de Computadores</h4>
-              <img src="img/png/SupTec.png" alt="img" class="img-fluid">
-              <div class="table_btn">
-                  <h5><b>26h</b> - Grau Profissionalizante</p></h5>
-                <a href="https://www.vejameucertificado.com.br/Certif.aspx?IdAluno=501810-17046&tipo=17046" class="btn"><i class="fa fa-check"></i>Verificar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-7 col-lg-3">
-          <div class="block-pricing">
-            <div class="table">
-              <h4>JAVASCRIPT E HTML</h4>
-              <img src="img/png/code (1).png" alt="img" class="img-fluid">
-              <div class="table_btn">
-                  <h5><b>16h</b> - Alura </p></h5>
-                <a href="https://cursos.alura.com.br/certificate/8a919b21-0307-43a5-9756-66e157c918e9" class="btn"><i class="fa fa-check"></i>Verificar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-7 col-lg-3">
-          <div class="block-pricing">
-            <div class="table">
-              <h4>Segurança da Informação</h4>
-              <img src="img/png/seguranca.png" alt="img" class="img-fluid">
-              <div class="table_btn">
-                  <h5><b>14h</b> - Fundação Bradesco </p></h5>
-                <a href="https://drive.google.com/file/d/1M4EwJFlN0InEAeMHDCKEHw9XOqD2nHvq/view?usp=share_link" class="btn"><i class="fa fa-check"></i>Verificar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-7 col-lg-3">
-          <div class="block-pricing">
-            <div class="table">
-              <h4>WordPress</h4>
-              <img src="img/wordpress2.png" alt="img" class="img-fluid">
-              <div class="table_btn">
-                  <h5><b>3h</b> - Rock University</p></h5>
-                <a href="https://university.br.rockcontent.com/certificates/xfkzxnn29s" class="btn"><i class="fa fa-check"></i>Verificar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    
       </div>
     </div>
   </section>
 
-  <!--==========================
-    Projetos
-  ============================-->
-  <section id="team" class="padd-section text-center wow fadeInUp">
-
+  <!-- ======== Experience ======== -->
+  <section id="experience" class="section section-alt">
     <div class="container">
-      <div class="section-title text-center">
-        <h2>Projetos</h2>
+      <div class="section-header reveal">
+        <span class="section-tag">Experiência</span>
+        <h2 class="section-title">Trajetória profissional</h2>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-6 col-md-4 col-lg-3">
-          <div class="team-block bottom">
-            <img src="img/v1.png" class="img-responsive team-image" alt="img">
-            
-            <div class="team-content">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://github.com/GeannyR/curriculo1">
-                    <i class="fa fa-github"></i> Repositório
-                  </a>
-                </li>
-                <li>
-                  <a href="https://geannyr.github.io/curriculo1.0/">
-                    <i class="fa fa-chevron-up"></i> Demo
-                  </a>
-                </li>
-              </ul>
-              <span>Portfólio Digital V1.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-md-4 col-lg-3">
-          <div class="team-block bottom">
-            <img src="img/v2.png" class="img-responsive team-image" alt="img">
-            
-            <div class="team-content">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://github.com/GeannyR/curriculo2">
-                    <i class="fa fa-github"></i> Repositório
-                  </a>
-                </li>
-                <li>
-                  <a href="https://geannyr.github.io/curriculo2/">
-                    <i class="fa fa-chevron-up"></i> Demo
-                  </a>
-                </li>
-              </ul>
-              <span>Portfólio Digital V2.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-md-4 col-lg-3">
-          <div class="team-block bottom">
-            <img src="img/imc.png" class="img-responsive team-image" alt="img">
-            
-            <div class="team-content">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://github.com/geannyr/imcalculator">
-                    <i class="fa fa-github"></i> Repositório
-                  </a>
-                </li>
-                <li>
-                  <a href="https://geannyr.github.io/imcalculator/">
-                    <i class="fa fa-chevron-up"></i> Demo
-                  </a>
-                </li>
-              </ul>
-              <span>Calculadora de IMC.</span>
-            </div>
-          </div>
-        </div>
-
-        
-        <div class="col-md-6 col-md-4 col-lg-3">
-          <div class="team-block bottom">
-            <img src="img/todolight.png" class="img-responsive team-image" alt="img">
-            
-            <div class="team-content">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://github.com/geannyr/todo-light-app">
-                    <i class="fa fa-github"></i> Repositório
-                  </a>
-                </li>
-                <li>
-                  <a href="https://todo-light.netlify.app/">
-                    <i class="fa fa-chevron-up"></i> Demo
-                  </a>
-                </li>
-              </ul>
-              <span>ToDo Light.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-md-4 col-lg-3">
-          <div class="team-block bottom">
-            <img src="img/githubsearch.png" class="img-responsive team-image" alt="img">
-            
-            <div class="team-content">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://github.com/geannyr/projetoavanti2">
-                    <i class="fa fa-github"></i> Repositório
-                  </a>
-                </li>
-                <li>
-                  <a href="https://geannyr.github.io/projetoavanti2/">
-                    <i class="fa fa-chevron-up"></i> Demo
-                  </a>
-                </li>
-              </ul>
-              <span>Buscador de perfil GitHub.</span>
-            </div>
-          </div>
-        </div>
-      
-      </div>
-    </div>
-  </section>
-
-
-  <!--==========================
-    Contato
-  ============================-->
-  <section id="contact" class="padd-section wow fadeInUp">
-    <section id="contact" class="padd-section wow fadeInUp">
-
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>Contato</h2>
-        </div>
-      </div>
-  
-      <div class="container">
-        <div class="row justify-content-center" style="padding-bottom: 100px">
-  
-          
-  
-          <div class="col-lg-3 col-md-3">
-            <div class="form">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3" style="
-              display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;">
-            <div class="info" style="display: flex;justify-content: flex-start;flex-wrap: wrap;">
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
               <div>
-                <i class="fa fa-map-marker"></i>
-                <p>Recife, Pernambuco.</p>
+                <h3 class="timeline-role">Desenvolvedora Júnior Full-Stack</h3>
+                <span class="timeline-company">Nomus</span>
               </div>
-  
-              <div class="email">
-                <i class="fa fa-envelope"></i>
-                <p>geanny.arodrigues@gmail.com.</p>
-              </div>
-  
+              <span class="timeline-period">09/2024 — Presente</span>
+            </div>
+            <p class="timeline-description">
+              Análise e desenvolvimento de sistemas, criação de novas funcionalidades,
+              correção de bugs e especificação de melhorias. Trabalho com Java, SQL,
+              JavaScript e JQuery no dia a dia.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Java</span>
+              <span class="tag">SQL</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">JQuery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
               <div>
-                <i class="fa fa-phone"></i>
-                <p>+55 (81) 98149-3288.</p>
+                <h3 class="timeline-role">Estagiária de Desenvolvimento Java</h3>
+                <span class="timeline-company">Nomus</span>
               </div>
+              <span class="timeline-period">06/2023 — 09/2024</span>
             </div>
-            <div class="social-links2" style="width: 500px;
-            max-width: 300px;
-            display: flex;
-            font-size: 24px;
-            justify-content: space-between;">
-              <a href="https://api.whatsapp.com/send?phone=5581981493288" class="Whatsapp" style="color: #71c55d"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
-              <a href="mailto:geanny.arodrigues@gmail.com" class="Email" style="color: #71c55d"><i class="fa-solid fa-envelope fa-xl"></i></a>
-              <a href="https://github.com/GeannyR" class="Github" style="color: #71c55d"><i class="fa-brands fa-github fa-xl"></i></a>
-              <a href="https://www.linkedin.com/in/geanny-arodrigues/" class="linkedin" style="color: #71c55d;" ><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <p class="timeline-description">
+              Auxílio na análise e desenvolvimento de sistemas, implementação de novas
+              funcionalidades, correção de bugs e análise de melhorias no sistema.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Java</span>
+              <span class="tag">SQL</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">JQuery</span>
             </div>
-    
           </div>
+        </div>
 
-          <div class="col-lg-3 col-md-3">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Analista de Atendimento</h3>
+                <span class="timeline-company">CSU Digital</span>
+              </div>
+              <span class="timeline-period">09/2021 — 12/2024</span>
+            </div>
+            <p class="timeline-description">
+              Atendimento receptivo e ativo via Chat e Voz, realizando tratativas de
+              pagamentos, cancelamentos e alterações de pedidos. Utilização de ferramentas
+              como Zendesk, Avaya e Cisco.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Zendesk</span>
+              <span class="tag">Avaya</span>
+              <span class="tag">Cisco</span>
+              <span class="tag">Atendimento</span>
+            </div>
           </div>
-
         </div>
       </div>
-    </section><!-- #contact -->
-  
-    <!--==========================
-      Footer
-    ============================-->
-    <footer class="footer" style="position: fixed">
-      <div class="container">
-        <div class="row2">
-  
+    </div>
+  </section>
 
-          <div class="col-md-6 col-lg-5">
+  <!-- ======== Education ======== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Formação</span>
+        <h2 class="section-title">Formação acadêmica</h2>
+      </div>
 
+      <div class="education-grid">
+        <div class="education-card reveal">
+          <div class="education-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
           </div>
+          <div class="education-content">
+            <h3>Ciência da Computação</h3>
+            <span class="education-institution">Centro Universitário União das Américas Descomplica</span>
+            <span class="education-detail">Com ênfase em Full Stack Dev</span>
+            <span class="education-period">2022 — Atual (7&deg; Período)</span>
+          </div>
+        </div>
 
+        <div class="education-card reveal">
+          <div class="education-icon">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div class="education-content">
+            <h3>Técnico em Administração</h3>
+            <span class="education-institution">ETE Antônio Carlos Gomes da Costa</span>
+            <span class="education-period">02/2019 — 09/2021</span>
+          </div>
+        </div>
 
+        <div class="education-card reveal">
+          <div class="education-icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <div class="education-content">
+            <h3>Web Design</h3>
+            <span class="education-institution">IDITEC</span>
+            <span class="education-period">02/2014 — 10/2015</span>
+          </div>
         </div>
       </div>
-  
-  </footer>
-  <footer>
-    <div class="copyrights">
-      <div class="container">
-        <p style="
-        display: flex;
-        justify-content: center;">&copy; Geanny Rodrigues. Todos os direitos reservados.</p>
-        <div class="credits">
+    </div>
+  </section>
+
+  <!-- ======== Skills ======== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">Tecnologias e ferramentas</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-code"></i> Front-End
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">JQuery</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-server"></i> Back-End
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-wrench"></i> Ferramentas &amp; IDEs
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Eclipse</span>
+            <span class="skill-tag">IntelliJ</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">WordPress</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-pen-nib"></i> Design &amp; Outros
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">Illustrator</span>
+            <span class="skill-tag">Pacote Office</span>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ======== Projects ======== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Projetos</span>
+        <h2 class="section-title">Trabalhos selecionados</h2>
       </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="img/githubsearch.png" alt="Buscador de perfil GitHub" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://geannyr.github.io/projetoavanti2/" class="project-overlay-link" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Buscador de Perfil GitHub</h3>
+            <p>Aplicação web para buscar e exibir perfis do GitHub de forma interativa.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/geannyr/projetoavanti2" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Código
+              </a>
+              <a href="https://geannyr.github.io/projetoavanti2/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="img/todolight.png" alt="ToDo Light" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://todo-light.netlify.app/" class="project-overlay-link" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>ToDo Light</h3>
+            <p>Aplicativo de lista de tarefas com design limpo e funcional.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/geannyr/todo-light-app" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Código
+              </a>
+              <a href="https://todo-light.netlify.app/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="img/imc.png" alt="Calculadora de IMC" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://geannyr.github.io/imcalculator/" class="project-overlay-link" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Calculadora de IMC</h3>
+            <p>Calculadora de Índice de Massa Corporal com interface intuitiva.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/geannyr/imcalculator" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Código
+              </a>
+              <a href="https://geannyr.github.io/imcalculator/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="img/v2.png" alt="Portfólio Digital V2" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://geannyr.github.io/curriculo2/" class="project-overlay-link" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Portfólio Digital V2</h3>
+            <p>Segunda versão do portfólio pessoal com design aprimorado.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/GeannyR/curriculo2" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Código
+              </a>
+              <a href="https://geannyr.github.io/curriculo2/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="img/v1.png" alt="Portfólio Digital V1" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://geannyr.github.io/curriculo1.0/" class="project-overlay-link" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Portfólio Digital V1</h3>
+            <p>Primeira versão do portfólio pessoal.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/GeannyR/curriculo1" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Código
+              </a>
+              <a href="https://geannyr.github.io/curriculo1.0/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Certificates ======== -->
+  <section id="certificates" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Certificados</span>
+        <h2 class="section-title">Certificações e cursos</h2>
+      </div>
+
+      <div class="certificates-grid">
+        <div class="certificate-card reveal">
+          <div class="certificate-hours">300h</div>
+          <h3>Web Design Responsivo</h3>
+          <span class="certificate-issuer">FreeCodeCamp</span>
+          <a href="https://www.freecodecamp.org/certification/geannyr/responsive-web-design" class="certificate-link" target="_blank" rel="noopener">
+            Verificar certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="certificate-card reveal">
+          <div class="certificate-hours">26h</div>
+          <h3>Montagem e Manutenção de Computadores</h3>
+          <span class="certificate-issuer">Grau Profissionalizante</span>
+          <a href="https://www.vejameucertificado.com.br/Certif.aspx?IdAluno=501810-17046&tipo=17046" class="certificate-link" target="_blank" rel="noopener">
+            Verificar certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="certificate-card reveal">
+          <div class="certificate-hours">16h</div>
+          <h3>JavaScript e HTML</h3>
+          <span class="certificate-issuer">Alura</span>
+          <a href="https://cursos.alura.com.br/certificate/8a919b21-0307-43a5-9756-66e157c918e9" class="certificate-link" target="_blank" rel="noopener">
+            Verificar certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="certificate-card reveal">
+          <div class="certificate-hours">14h</div>
+          <h3>Segurança da Informação</h3>
+          <span class="certificate-issuer">Fundação Bradesco</span>
+          <a href="https://drive.google.com/file/d/1M4EwJFlN0InEAeMHDCKEHw9XOqD2nHvq/view?usp=share_link" class="certificate-link" target="_blank" rel="noopener">
+            Verificar certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="certificate-card reveal">
+          <div class="certificate-hours">3h</div>
+          <h3>WordPress</h3>
+          <span class="certificate-issuer">Rock University</span>
+          <a href="https://university.br.rockcontent.com/certificates/xfkzxnn29s" class="certificate-link" target="_blank" rel="noopener">
+            Verificar certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Contact ======== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-wrapper reveal">
+        <div class="contact-header">
+          <span class="section-tag">Contato</span>
+          <h2 class="section-title">Vamos trabalhar juntos?</h2>
+          <p class="contact-subtitle">
+            Estou disponível para novas oportunidades. Se você procura uma
+            desenvolvedora comprometida e atenta aos detalhes, entre em contato.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <a href="mailto:geanny.arodrigues@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="contact-card-label">E-mail</span>
+            <span class="contact-card-value">geanny.arodrigues@gmail.com</span>
+          </a>
+
+          <a href="https://api.whatsapp.com/send?phone=5581981493288" class="contact-card" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="contact-card-label">WhatsApp</span>
+            <span class="contact-card-value">+55 (81) 98149-3288</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/geanny-arodrigues/" class="contact-card" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">/in/geanny-arodrigues</span>
+          </a>
+
+          <a href="https://github.com/GeannyR" class="contact-card" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+            <span class="contact-card-label">GitHub</span>
+            <span class="contact-card-value">/GeannyR</span>
+          </a>
+        </div>
+
+        <div class="contact-location">
+          <i class="fa-solid fa-location-dot"></i>
+          Recife, Pernambuco — Brasil
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Footer ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">GR<span>.</span></a>
+        <p id="footerCopy"></p>
+      </div>
+    </div>
   </footer>
 
+  <!-- Back to Top -->
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
 
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- JavaScript Libraries -->
+  <!-- Scripts -->
   <script src="https://kit.fontawesome.com/b353e43968.js" crossorigin="anonymous"></script>
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/modal-video/js/modal-video.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
 </body>
 </html>
