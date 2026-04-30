@@ -1,14 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- Navbar scroll effect ---
+  // --- Navbar scroll effect + reading progress ---
   const header = document.getElementById('header');
+  const progress = document.getElementById('scrollProgress');
+  const backToTop = document.getElementById('backToTop');
 
-  const handleHeaderScroll = () => {
-    header.classList.toggle('scrolled', window.scrollY > 50);
+  let ticking = false;
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      header.classList.toggle('scrolled', y > 50);
+      backToTop?.classList.toggle('visible', y > 500);
+
+      if (progress) {
+        const h = document.documentElement;
+        const max = h.scrollHeight - h.clientHeight;
+        const pct = max > 0 ? (y / max) * 100 : 0;
+        progress.style.width = pct + '%';
+      }
+      ticking = false;
+    });
   };
 
-  window.addEventListener('scroll', handleHeaderScroll, { passive: true });
-  handleHeaderScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
   // --- Mobile nav toggle ---
   const navToggle = document.getElementById('navToggle');
@@ -20,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
-  // Close mobile nav on link click
   navLinks.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
       navToggle.classList.remove('active');
@@ -29,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close mobile nav on outside click
   document.addEventListener('click', (e) => {
     if (navLinks.classList.contains('open') &&
         !navLinks.contains(e.target) &&
@@ -76,18 +91,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   reveals.forEach(el => observerReveal.observe(el));
-
-  // --- Back to top ---
-  const backToTop = document.getElementById('backToTop');
-
-  window.addEventListener('scroll', () => {
-    backToTop.classList.toggle('visible', window.scrollY > 500);
-  }, { passive: true });
-
-  // --- Footer year ---
-  const footerCopy = document.getElementById('footerCopy');
-  if (footerCopy) {
-    footerCopy.textContent = '\u00A9 ' + new Date().getFullYear() + ' Geanny Rodrigues. Todos os direitos reservados.';
-  }
 
 });

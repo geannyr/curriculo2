@@ -17,27 +17,46 @@
 </head>
 <body>
 
+  <!-- Reading progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- ======== Navigation ======== -->
   <header id="header">
     <nav class="navbar">
       <a href="#hero" class="nav-logo">GR<span>.</span></a>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">Sobre</a></li>
-        <li><a href="#experience" class="nav-link">Experiência</a></li>
-        <li><a href="#education" class="nav-link">Formação</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projetos</a></li>
-        <li><a href="#certificates" class="nav-link">Certificados</a></li>
-        <li><a href="#contact" class="nav-link">Contato</a></li>
-      </ul>
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link active" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experiência</a></li>
+          <li><a href="#education" class="nav-link" data-i18n="nav.education">Formação</a></li>
+          <li><a href="#languages" class="nav-link" data-i18n="nav.languages">Idiomas</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projetos</a></li>
+          <li><a href="#certificates" class="nav-link" data-i18n="nav.certificates">Certificados</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contato</a></li>
+        </ul>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn" type="button" data-i18n-attr="aria-label:a11y.toggleLang" aria-label="Alterar idioma" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i>
+            <span id="langCurrent">PT</span>
+            <i class="fa-solid fa-chevron-down lang-caret"></i>
+          </button>
+          <ul class="lang-menu" id="langMenu" role="menu">
+            <li role="none"><button type="button" role="menuitem" data-lang="pt">PT — Português</button></li>
+            <li role="none"><button type="button" role="menuitem" data-lang="en">EN — English</button></li>
+            <li role="none"><button type="button" role="menuitem" data-lang="es">ES — Español</button></li>
+          </ul>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" type="button" data-i18n-attr="aria-label:a11y.toggleMenu" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -46,14 +65,15 @@
     <div class="container">
       <div class="hero-content">
         <h1 class="hero-name reveal">Geanny Rodrigues</h1>
-        <p class="hero-role reveal">Desenvolvedora Full-Stack</p>
-        <p class="hero-meta reveal">Nomus · Ciência da Computação · Recife, PE</p>
+        <p class="hero-role reveal" data-i18n="hero.role">Desenvolvedora Full-Stack</p>
+        <p class="hero-meta reveal" data-i18n="hero.meta">Java · Spring Boot · React · UX</p>
 
         <div class="hero-actions reveal">
-          <a href="https://drive.google.com/file/d/15SC7oyu0L_Y5zRKyo6sWc9tf2PdGjkAC/view?usp=share_link" class="btn btn-primary" target="_blank" rel="noopener">
-            <i class="fa-solid fa-download"></i> Download CV
+          <a href="docs/CurriculumGeanny.pdf" class="btn btn-primary" target="_blank" rel="noopener" download data-i18n-attr="href:cv.url">
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="hero.cta.cv">Download CV</span>
           </a>
-          <a href="#contact" class="btn btn-outline">Entre em contato</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero.cta.contact">Entre em contato</a>
         </div>
 
         <div class="hero-social reveal">
@@ -63,7 +83,7 @@
           <a href="https://www.linkedin.com/in/geanny-arodrigues/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="mailto:geanny.arodrigues@gmail.com" aria-label="E-mail">
+          <a href="mailto:geanny.mrodrigues@gmail.com" aria-label="E-mail">
             <i class="fa-solid fa-envelope"></i>
           </a>
           <a href="https://api.whatsapp.com/send?phone=5581981493288" target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -73,7 +93,7 @@
 
         <p class="hero-status reveal">
           <span class="status-dot"></span>
-          Disponível para oportunidades
+          <span data-i18n="hero.status">Disponível para oportunidades</span>
         </p>
       </div>
     </div>
@@ -83,19 +103,19 @@
   <section id="about" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Sobre mim</span>
-        <h2 class="section-title">Sobre</h2>
+        <span class="section-tag" data-i18n="about.tag">Sobre mim</span>
+        <h2 class="section-title" data-i18n="about.title">Sobre</h2>
       </div>
 
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>
+          <p data-i18n-html="about.p1">
             Estudante de <strong>Ciência da Computação</strong> com experiência prática em
             desenvolvimento <strong>front-end e back-end</strong> de aplicações web. Atualmente
             atuo como Desenvolvedora Júnior Full-Stack na <strong>Nomus</strong>, onde trabalho
             com Java, SQL, JavaScript e JQuery no desenvolvimento e manutenção de sistemas.
           </p>
-          <p>
+          <p data-i18n-html="about.p2">
             Meu foco está em desenvolver soluções bem construídas, com código organizado
             e atenção à experiência do usuário. Busco evoluir continuamente como profissional
             e contribuir com entregas de qualidade.
@@ -103,27 +123,27 @@
         </div>
 
         <div class="about-competencies reveal">
-          <h3 class="competencies-title">Competências</h3>
+          <h3 class="competencies-title" data-i18n="about.competencies.title">Competências</h3>
           <div class="competency-list">
             <div class="competency-item">
               <i class="fa-solid fa-arrows-rotate"></i>
-              <span>Flexibilidade e adaptação</span>
+              <span data-i18n="about.competencies.flex">Flexibilidade e adaptação</span>
             </div>
             <div class="competency-item">
               <i class="fa-solid fa-brain"></i>
-              <span>Inteligência emocional</span>
+              <span data-i18n="about.competencies.eq">Inteligência emocional</span>
             </div>
             <div class="competency-item">
               <i class="fa-solid fa-puzzle-piece"></i>
-              <span>Resolução de problemas</span>
+              <span data-i18n="about.competencies.problem">Resolução de problemas</span>
             </div>
             <div class="competency-item">
               <i class="fa-solid fa-lightbulb"></i>
-              <span>Pensamento crítico</span>
+              <span data-i18n="about.competencies.critical">Pensamento crítico</span>
             </div>
             <div class="competency-item">
               <i class="fa-solid fa-comments"></i>
-              <span>Boa comunicação</span>
+              <span data-i18n="about.competencies.communication">Boa comunicação</span>
             </div>
           </div>
         </div>
@@ -135,31 +155,62 @@
   <section id="experience" class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Experiência</span>
-        <h2 class="section-title">Trajetória profissional</h2>
+        <span class="section-tag" data-i18n="experience.tag">Experiência</span>
+        <h2 class="section-title" data-i18n="experience.title">Trajetória profissional</h2>
       </div>
 
       <div class="timeline">
-        <div class="timeline-item reveal">
+        <div class="timeline-item timeline-current reveal">
           <div class="timeline-marker"></div>
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Desenvolvedora Júnior Full-Stack</h3>
-                <span class="timeline-company">Nomus</span>
+                <h3 class="timeline-role" data-i18n="experience.roleAuto">Desenvolvedora Front-end & Automações</h3>
+                <span class="timeline-company" data-i18n="experience.companyAuto">AutoCraft · Remoto</span>
               </div>
-              <span class="timeline-period">09/2024 — Presente</span>
+              <span class="timeline-period" data-i18n="experience.periodAuto">Ago 2025 — Presente</span>
             </div>
-            <p class="timeline-description">
-              Análise e desenvolvimento de sistemas, criação de novas funcionalidades,
-              correção de bugs e especificação de melhorias. Trabalho com Java, SQL,
-              JavaScript e JQuery no dia a dia.
+            <p class="timeline-description" data-i18n-html="experience.descAuto">
+              Atuação paralela na AutoCraft com foco em <strong>Front-end e automações</strong>.
+              Colaboração na construção de funcionalidades de UI/UX, apps desktop e extensões
+              de produtos como <strong>EZ Native</strong> (deploy automatizado para App Store/Play Store),
+              <strong>Viddz</strong> (video messaging com CTAs interativas), <strong>CREDistributors</strong>
+              (e-commerce) e <strong>Leap Labour</strong> (transformação digital com FlutterFlow + n8n).
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">FlutterFlow</span>
+              <span class="tag">n8n</span>
+              <span class="tag">React</span>
+              <span class="tag">Front-end</span>
+              <span class="tag" data-i18n="experience.tagAutomation">Automação</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-current reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role" data-i18n="experience.role1">Desenvolvedora Full-Stack Júnior</h3>
+                <span class="timeline-company" data-i18n="experience.companyNomus">Nomus · Rio de Janeiro, RJ (Remoto)</span>
+              </div>
+              <span class="timeline-period" data-i18n="experience.period1">Set 2024 — Presente</span>
+            </div>
+            <p class="timeline-description" data-i18n="experience.desc1">
+              Desenvolvimento e manutenção de funcionalidades em ERP industrial (Java 8/17,
+              Spring Boot, React), com foco em usabilidade, performance e estabilidade.
+              Análise e correção de bugs críticos, implementação de novas funcionalidades
+              orientada por métricas, code reviews com Git e SVN, e criação de wireframes
+              no Figma para validação de UX antes da implementação.
             </p>
             <div class="timeline-tags">
               <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">React</span>
               <span class="tag">SQL</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">JQuery</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Git</span>
             </div>
           </div>
         </div>
@@ -169,20 +220,22 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Estagiária de Desenvolvimento Java</h3>
-                <span class="timeline-company">Nomus</span>
+                <h3 class="timeline-role" data-i18n="experience.role2">Estagiária em Desenvolvimento Java</h3>
+                <span class="timeline-company" data-i18n="experience.companyNomus">Nomus · Rio de Janeiro, RJ (Remoto)</span>
               </div>
-              <span class="timeline-period">06/2023 — 09/2024</span>
+              <span class="timeline-period" data-i18n="experience.period2">Jun 2023 — Set 2024</span>
             </div>
-            <p class="timeline-description">
-              Auxílio na análise e desenvolvimento de sistemas, implementação de novas
-              funcionalidades, correção de bugs e análise de melhorias no sistema.
+            <p class="timeline-description" data-i18n="experience.desc2">
+              Auxílio no desenvolvimento e análise de sistemas: implementação de melhorias,
+              correção de bugs e desenvolvimento de APIs REST com Java 8. Trabalho com
+              JavaScript e jQuery no front-end para suporte a demandas internas.
             </p>
             <div class="timeline-tags">
-              <span class="tag">Java</span>
-              <span class="tag">SQL</span>
+              <span class="tag">Java 8</span>
+              <span class="tag">REST APIs</span>
               <span class="tag">JavaScript</span>
-              <span class="tag">JQuery</span>
+              <span class="tag">jQuery</span>
+              <span class="tag">SQL</span>
             </div>
           </div>
         </div>
@@ -192,21 +245,22 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Analista de Atendimento</h3>
-                <span class="timeline-company">CSU Digital</span>
+                <h3 class="timeline-role" data-i18n="experience.role3">Analista de Atendimento</h3>
+                <span class="timeline-company">CSU Digital · Recife, PE</span>
               </div>
-              <span class="timeline-period">09/2021 — 12/2024</span>
+              <span class="timeline-period">Set 2021 — Dez 2024</span>
             </div>
-            <p class="timeline-description">
-              Atendimento receptivo e ativo via Chat e Voz, realizando tratativas de
-              pagamentos, cancelamentos e alterações de pedidos. Utilização de ferramentas
-              como Zendesk, Avaya e Cisco.
+            <p class="timeline-description" data-i18n="experience.desc3">
+              Resolução de demandas via chat e voz utilizando Zendesk, Cisco e Avaya,
+              priorizando por SLA e impacto no negócio. Tradução de problemas de usuários
+              em tickets acionáveis com passos de reprodução, logs e evidências, acelerando
+              correção de bugs junto ao time de produto/dev.
             </p>
             <div class="timeline-tags">
               <span class="tag">Zendesk</span>
               <span class="tag">Avaya</span>
               <span class="tag">Cisco</span>
-              <span class="tag">Atendimento</span>
+              <span class="tag" data-i18n="experience.tagService">Atendimento</span>
             </div>
           </div>
         </div>
@@ -218,8 +272,8 @@
   <section id="education" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Formação</span>
-        <h2 class="section-title">Formação acadêmica</h2>
+        <span class="section-tag" data-i18n="education.tag">Formação</span>
+        <h2 class="section-title" data-i18n="education.title">Formação acadêmica</h2>
       </div>
 
       <div class="education-grid">
@@ -228,10 +282,10 @@
             <i class="fa-solid fa-graduation-cap"></i>
           </div>
           <div class="education-content">
-            <h3>Ciência da Computação</h3>
+            <h3 data-i18n="education.cs.title">Bacharelado em Ciência da Computação</h3>
             <span class="education-institution">Centro Universitário União das Américas Descomplica</span>
-            <span class="education-detail">Com ênfase em Full Stack Dev</span>
-            <span class="education-period">2022 — Atual (7&deg; Período)</span>
+            <span class="education-detail" data-i18n="education.cs.detail">Com ênfase em Full Stack Dev</span>
+            <span class="education-period" data-i18n="education.cs.period">2021 — 2025 (Conclusão em Out/2025)</span>
           </div>
         </div>
 
@@ -240,7 +294,7 @@
             <i class="fa-solid fa-certificate"></i>
           </div>
           <div class="education-content">
-            <h3>Técnico em Administração</h3>
+            <h3 data-i18n="education.tech.title">Técnico em Administração</h3>
             <span class="education-institution">ETE Antônio Carlos Gomes da Costa</span>
             <span class="education-period">02/2019 — 09/2021</span>
           </div>
@@ -260,60 +314,99 @@
     </div>
   </section>
 
+  <!-- ======== Languages ======== -->
+  <section id="languages" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="languages.tag">Idiomas</span>
+        <h2 class="section-title" data-i18n="languages.title">Idiomas</h2>
+      </div>
+
+      <div class="languages-grid">
+        <div class="language-card reveal">
+          <div class="language-flag">PT</div>
+          <div class="language-content">
+            <h3 data-i18n="languages.pt.name">Português</h3>
+            <span class="language-level level-native" data-i18n="languages.pt.level">Nativo</span>
+          </div>
+        </div>
+
+        <div class="language-card reveal">
+          <div class="language-flag">EN</div>
+          <div class="language-content">
+            <h3 data-i18n="languages.en.name">Inglês</h3>
+            <span class="language-level level-advanced" data-i18n="languages.en.level">Avançado</span>
+            <p class="language-detail" data-i18n="languages.en.detail">Leitura/escrita: Avançado · Conversação: Intermediário</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ======== Skills ======== -->
   <section id="skills" class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Skills</span>
-        <h2 class="section-title">Tecnologias e ferramentas</h2>
+        <span class="section-tag" data-i18n="skills.tag">Skills</span>
+        <h2 class="section-title" data-i18n="skills.title">Tecnologias e ferramentas</h2>
       </div>
 
       <div class="skills-grid">
         <div class="skill-category reveal">
           <h3 class="skill-category-title">
-            <i class="fa-solid fa-code"></i> Front-End
+            <i class="fa-solid fa-code"></i>
+            <span data-i18n="skills.frontend">Front-End</span>
           </h3>
           <div class="skill-tags">
             <span class="skill-tag">HTML5</span>
             <span class="skill-tag">CSS3</span>
             <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">jQuery</span>
             <span class="skill-tag">Bootstrap</span>
-            <span class="skill-tag">JQuery</span>
           </div>
         </div>
 
         <div class="skill-category reveal">
           <h3 class="skill-category-title">
-            <i class="fa-solid fa-server"></i> Back-End
+            <i class="fa-solid fa-server"></i>
+            <span data-i18n="skills.backend">Back-End &amp; Banco</span>
           </h3>
           <div class="skill-tags">
-            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Java (8, 17)</span>
+            <span class="skill-tag">Spring Boot</span>
             <span class="skill-tag">Python</span>
-            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
           </div>
         </div>
 
         <div class="skill-category reveal">
           <h3 class="skill-category-title">
-            <i class="fa-solid fa-wrench"></i> Ferramentas &amp; IDEs
+            <i class="fa-solid fa-wrench"></i>
+            <span data-i18n="skills.tools">DevOps &amp; APIs</span>
           </h3>
           <div class="skill-tags">
             <span class="skill-tag">Git</span>
-            <span class="skill-tag">Eclipse</span>
-            <span class="skill-tag">IntelliJ</span>
-            <span class="skill-tag">VS Code</span>
-            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">SVN</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">REST</span>
+            <span class="skill-tag">Webhooks</span>
+            <span class="skill-tag">SOAP</span>
           </div>
         </div>
 
         <div class="skill-category reveal">
           <h3 class="skill-category-title">
-            <i class="fa-solid fa-pen-nib"></i> Design &amp; Outros
+            <i class="fa-solid fa-pen-nib"></i>
+            <span data-i18n="skills.design">UX/UI</span>
           </h3>
           <div class="skill-tags">
-            <span class="skill-tag">Photoshop</span>
-            <span class="skill-tag">Illustrator</span>
-            <span class="skill-tag">Pacote Office</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag" data-i18n="skills.wireframes">Wireframes</span>
+            <span class="skill-tag" data-i18n="skills.prototyping">Prototipação</span>
+            <span class="skill-tag" data-i18n="skills.accessibility">Acessibilidade</span>
           </div>
         </div>
       </div>
@@ -324,8 +417,71 @@
   <section id="projects" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Projetos</span>
-        <h2 class="section-title">Trabalhos selecionados</h2>
+        <span class="section-tag" data-i18n="projects.tag">Projetos</span>
+        <h2 class="section-title" data-i18n="projects.title">Trabalhos selecionados</h2>
+      </div>
+
+      <div class="projects-subgroup reveal">
+        <span data-i18n="projects.clientWork">Trabalhos com clientes</span>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="img/autocraft/viddz.png" alt="Viddz" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://vidds-video-recorder.web.app/" class="project-overlay-link" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Viddz</h3>
+            <p data-i18n="projects.viddz.desc">Ferramenta de video messaging com CTAs clicáveis dentro do player. Colaboração em funcionalidades de UI/UX na AutoCraft.</p>
+            <div class="project-tags">
+              <span class="tag">Video</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">Front-end</span>
+            </div>
+            <div class="project-links">
+              <a href="https://vidds-video-recorder.web.app/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="projects.demo">Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="img/autocraft/eznative.png" alt="EZ Native" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://ez-native.com/" class="project-overlay-link" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>EZ Native</h3>
+            <p data-i18n="projects.eznative.desc">Plataforma que automatiza o caminho do repositório à App Store / Play Store. Contribuição com extensões e melhorias de UX na AutoCraft.</p>
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">FlutterFlow</span>
+              <span class="tag" data-i18n="experience.tagAutomation">Automação</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ez-native.com/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="projects.demo">Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-subgroup reveal">
+        <span data-i18n="projects.personal">Projetos pessoais</span>
       </div>
 
       <div class="projects-grid">
@@ -339,8 +495,8 @@
             </div>
           </div>
           <div class="project-content">
-            <h3>Buscador de Perfil GitHub</h3>
-            <p>Aplicação web para buscar e exibir perfis do GitHub de forma interativa.</p>
+            <h3 data-i18n="projects.p1.title">Buscador de Perfil GitHub</h3>
+            <p data-i18n="projects.p1.desc">Aplicação web para buscar e exibir perfis do GitHub de forma interativa.</p>
             <div class="project-tags">
               <span class="tag">JavaScript</span>
               <span class="tag">API</span>
@@ -348,10 +504,12 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/geannyr/projetoavanti2" target="_blank" rel="noopener">
-                <i class="fa-brands fa-github"></i> Código
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="projects.code">Código</span>
               </a>
               <a href="https://geannyr.github.io/projetoavanti2/" target="_blank" rel="noopener">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="projects.demo">Demo</span>
               </a>
             </div>
           </div>
@@ -368,17 +526,19 @@
           </div>
           <div class="project-content">
             <h3>ToDo Light</h3>
-            <p>Aplicativo de lista de tarefas com design limpo e funcional.</p>
+            <p data-i18n="projects.p2.desc">Aplicativo de lista de tarefas com design limpo e funcional.</p>
             <div class="project-tags">
               <span class="tag">JavaScript</span>
               <span class="tag">HTML/CSS</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/geannyr/todo-light-app" target="_blank" rel="noopener">
-                <i class="fa-brands fa-github"></i> Código
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="projects.code">Código</span>
               </a>
               <a href="https://todo-light.netlify.app/" target="_blank" rel="noopener">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="projects.demo">Demo</span>
               </a>
             </div>
           </div>
@@ -394,18 +554,20 @@
             </div>
           </div>
           <div class="project-content">
-            <h3>Calculadora de IMC</h3>
-            <p>Calculadora de Índice de Massa Corporal com interface intuitiva.</p>
+            <h3 data-i18n="projects.p3.title">Calculadora de IMC</h3>
+            <p data-i18n="projects.p3.desc">Calculadora de Índice de Massa Corporal com interface intuitiva.</p>
             <div class="project-tags">
               <span class="tag">JavaScript</span>
               <span class="tag">HTML/CSS</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/geannyr/imcalculator" target="_blank" rel="noopener">
-                <i class="fa-brands fa-github"></i> Código
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="projects.code">Código</span>
               </a>
               <a href="https://geannyr.github.io/imcalculator/" target="_blank" rel="noopener">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="projects.demo">Demo</span>
               </a>
             </div>
           </div>
@@ -421,8 +583,8 @@
             </div>
           </div>
           <div class="project-content">
-            <h3>Portfólio Digital V2</h3>
-            <p>Segunda versão do portfólio pessoal com design aprimorado.</p>
+            <h3 data-i18n="projects.p4.title">Portfólio Digital V2</h3>
+            <p data-i18n="projects.p4.desc">Segunda versão do portfólio pessoal com design aprimorado.</p>
             <div class="project-tags">
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
@@ -430,10 +592,12 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/GeannyR/curriculo2" target="_blank" rel="noopener">
-                <i class="fa-brands fa-github"></i> Código
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="projects.code">Código</span>
               </a>
               <a href="https://geannyr.github.io/curriculo2/" target="_blank" rel="noopener">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="projects.demo">Demo</span>
               </a>
             </div>
           </div>
@@ -449,18 +613,20 @@
             </div>
           </div>
           <div class="project-content">
-            <h3>Portfólio Digital V1</h3>
-            <p>Primeira versão do portfólio pessoal.</p>
+            <h3 data-i18n="projects.p5.title">Portfólio Digital V1</h3>
+            <p data-i18n="projects.p5.desc">Primeira versão do portfólio pessoal.</p>
             <div class="project-tags">
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/GeannyR/curriculo1" target="_blank" rel="noopener">
-                <i class="fa-brands fa-github"></i> Código
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="projects.code">Código</span>
               </a>
               <a href="https://geannyr.github.io/curriculo1.0/" target="_blank" rel="noopener">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="projects.demo">Demo</span>
               </a>
             </div>
           </div>
@@ -473,44 +639,44 @@
   <section id="certificates" class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Certificados</span>
-        <h2 class="section-title">Certificações e cursos</h2>
+        <span class="section-tag" data-i18n="certificates.tag">Certificados</span>
+        <h2 class="section-title" data-i18n="certificates.title">Certificações e cursos</h2>
       </div>
 
       <div class="certificates-grid">
         <div class="certificate-card reveal">
           <div class="certificate-hours">300h</div>
-          <h3>Web Design Responsivo</h3>
+          <h3 data-i18n="certificates.c1.title">Web Design Responsivo</h3>
           <span class="certificate-issuer">FreeCodeCamp</span>
           <a href="https://www.freecodecamp.org/certification/geannyr/responsive-web-design" class="certificate-link" target="_blank" rel="noopener">
-            Verificar certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span data-i18n="certificates.verify">Verificar certificado</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
 
         <div class="certificate-card reveal">
           <div class="certificate-hours">26h</div>
-          <h3>Montagem e Manutenção de Computadores</h3>
+          <h3 data-i18n="certificates.c2.title">Montagem e Manutenção de Computadores</h3>
           <span class="certificate-issuer">Grau Profissionalizante</span>
           <a href="https://www.vejameucertificado.com.br/Certif.aspx?IdAluno=501810-17046&tipo=17046" class="certificate-link" target="_blank" rel="noopener">
-            Verificar certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span data-i18n="certificates.verify">Verificar certificado</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
 
         <div class="certificate-card reveal">
           <div class="certificate-hours">16h</div>
-          <h3>JavaScript e HTML</h3>
+          <h3 data-i18n="certificates.c3.title">JavaScript e HTML</h3>
           <span class="certificate-issuer">Alura</span>
           <a href="https://cursos.alura.com.br/certificate/8a919b21-0307-43a5-9756-66e157c918e9" class="certificate-link" target="_blank" rel="noopener">
-            Verificar certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span data-i18n="certificates.verify">Verificar certificado</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
 
         <div class="certificate-card reveal">
           <div class="certificate-hours">14h</div>
-          <h3>Segurança da Informação</h3>
+          <h3 data-i18n="certificates.c4.title">Segurança da Informação</h3>
           <span class="certificate-issuer">Fundação Bradesco</span>
           <a href="https://drive.google.com/file/d/1M4EwJFlN0InEAeMHDCKEHw9XOqD2nHvq/view?usp=share_link" class="certificate-link" target="_blank" rel="noopener">
-            Verificar certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span data-i18n="certificates.verify">Verificar certificado</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
 
@@ -519,7 +685,7 @@
           <h3>WordPress</h3>
           <span class="certificate-issuer">Rock University</span>
           <a href="https://university.br.rockcontent.com/certificates/xfkzxnn29s" class="certificate-link" target="_blank" rel="noopener">
-            Verificar certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span data-i18n="certificates.verify">Verificar certificado</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
       </div>
@@ -531,19 +697,19 @@
     <div class="container">
       <div class="contact-wrapper reveal">
         <div class="contact-header">
-          <span class="section-tag">Contato</span>
-          <h2 class="section-title">Vamos trabalhar juntos?</h2>
-          <p class="contact-subtitle">
+          <span class="section-tag" data-i18n="contact.tag">Contato</span>
+          <h2 class="section-title" data-i18n="contact.title">Vamos trabalhar juntos?</h2>
+          <p class="contact-subtitle" data-i18n="contact.subtitle">
             Estou disponível para novas oportunidades. Se você procura uma
             desenvolvedora comprometida e atenta aos detalhes, entre em contato.
           </p>
         </div>
 
         <div class="contact-grid">
-          <a href="mailto:geanny.arodrigues@gmail.com" class="contact-card">
+          <a href="mailto:geanny.mrodrigues@gmail.com" class="contact-card">
             <i class="fa-solid fa-envelope"></i>
-            <span class="contact-card-label">E-mail</span>
-            <span class="contact-card-value">geanny.arodrigues@gmail.com</span>
+            <span class="contact-card-label" data-i18n="contact.email">E-mail</span>
+            <span class="contact-card-value">geanny.mrodrigues@gmail.com</span>
           </a>
 
           <a href="https://api.whatsapp.com/send?phone=5581981493288" class="contact-card" target="_blank" rel="noopener">
@@ -567,7 +733,7 @@
 
         <div class="contact-location">
           <i class="fa-solid fa-location-dot"></i>
-          Recife, Pernambuco — Brasil
+          <span data-i18n="contact.location">Recife, Pernambuco — Brasil</span>
         </div>
       </div>
     </div>
@@ -584,12 +750,13 @@
   </footer>
 
   <!-- Back to Top -->
-  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+  <a href="#hero" class="back-to-top" id="backToTop" data-i18n-attr="aria-label:a11y.backToTop" aria-label="Voltar ao topo">
     <i class="fa-solid fa-chevron-up"></i>
   </a>
 
   <!-- Scripts -->
   <script src="https://kit.fontawesome.com/b353e43968.js" crossorigin="anonymous"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
