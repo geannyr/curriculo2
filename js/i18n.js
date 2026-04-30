@@ -93,7 +93,7 @@
         viddz: { desc: 'Ferramenta de video messaging com CTAs clicáveis dentro do player. Colaboração em funcionalidades de UI/UX na AutoCraft.' },
         eznative: { desc: 'Plataforma que automatiza o caminho do repositório à App Store / Play Store. Contribuição com extensões e melhorias de UX na AutoCraft.' },
         p1: { title: 'GitFinder', desc: 'Buscador de perfil do GitHub com repositórios recentes e suporte a 3 idiomas. Vanilla JS, sem build.' },
-        p2: { desc: 'Aplicativo de lista de tarefas com design limpo e funcional.' },
+        p2: { desc: 'Gerenciador de tarefas com filtros, contadores em tempo real e suporte a 3 idiomas. React + Tailwind.' },
         p3: { title: 'Calculadora de IMC', desc: 'Calculadora de Índice de Massa Corporal com interface intuitiva.' },
         p4: { title: 'Portfólio Digital V2', desc: 'Segunda versão do portfólio pessoal com design aprimorado.' },
         p5: { title: 'Portfólio Digital V1', desc: 'Primeira versão do portfólio pessoal.' }
@@ -211,7 +211,7 @@
         viddz: { desc: 'Video messaging tool with clickable CTAs inside the player. Collaboration on UI/UX features at AutoCraft.' },
         eznative: { desc: 'Platform that automates the path from repo to App Store / Play Store. Contributed extensions and UX improvements at AutoCraft.' },
         p1: { title: 'GitFinder', desc: 'GitHub profile finder with recent repositories and 3-language support. Vanilla JS, no build.' },
-        p2: { desc: 'Task list app with clean, functional design.' },
+        p2: { desc: 'Task manager with filters, live counters and 3-language support. React + Tailwind.' },
         p3: { title: 'BMI Calculator', desc: 'Body Mass Index calculator with intuitive interface.' },
         p4: { title: 'Digital Portfolio V2', desc: 'Second version of the personal portfolio with refined design.' },
         p5: { title: 'Digital Portfolio V1', desc: 'First version of the personal portfolio.' }
@@ -329,7 +329,7 @@
         viddz: { desc: 'Herramienta de video messaging con CTAs clicables dentro del player. Colaboración en funcionalidades de UI/UX en AutoCraft.' },
         eznative: { desc: 'Plataforma que automatiza el camino del repositorio a la App Store / Play Store. Contribución con extensiones y mejoras de UX en AutoCraft.' },
         p1: { title: 'GitFinder', desc: 'Buscador de perfiles GitHub con repositorios recientes y soporte a 3 idiomas. Vanilla JS, sin build.' },
-        p2: { desc: 'Aplicación de lista de tareas con diseño limpio y funcional.' },
+        p2: { desc: 'Gestor de tareas con filtros, contadores en tiempo real y soporte a 3 idiomas. React + Tailwind.' },
         p3: { title: 'Calculadora de IMC', desc: 'Calculadora de Índice de Masa Corporal con interfaz intuitiva.' },
         p4: { title: 'Portafolio Digital V2', desc: 'Segunda versión del portafolio personal con diseño mejorado.' },
         p5: { title: 'Portafolio Digital V1', desc: 'Primera versión del portafolio personal.' }
