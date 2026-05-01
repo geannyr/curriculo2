@@ -11,10 +11,8 @@
         about: 'Sobre',
         experience: 'Experiência',
         education: 'Formação',
-        languages: 'Idiomas',
         skills: 'Skills',
         projects: 'Projetos',
-        certificates: 'Certificados',
         contact: 'Contato'
       },
       hero: {
@@ -58,7 +56,9 @@
       },
       education: {
         tag: 'Formação',
-        title: 'Formação acadêmica',
+        title: 'Formação & Certificações',
+        subgroupAcademic: 'Acadêmica',
+        subgroupCertificates: 'Certificações e cursos',
         cs: {
           title: 'Bacharelado em Ciência da Computação',
           detail: 'Com ênfase em Full Stack Dev',
@@ -66,22 +66,19 @@
         },
         tech: { title: 'Técnico em Administração' }
       },
-      languages: {
-        tag: 'Idiomas',
-        title: 'Idiomas',
-        pt: { name: 'Português', level: 'Nativo' },
-        en: { name: 'Inglês', level: 'Avançado', detail: 'Leitura/escrita: Avançado · Conversação: Intermediário' }
-      },
       skills: {
         tag: 'Skills',
-        title: 'Tecnologias e ferramentas',
+        title: 'Skills & Idiomas',
         frontend: 'Front-End',
         backend: 'Back-End & Banco',
         tools: 'DevOps & APIs',
         design: 'UX/UI',
         wireframes: 'Wireframes',
         prototyping: 'Prototipação',
-        accessibility: 'Acessibilidade'
+        accessibility: 'Acessibilidade',
+        languages: 'Idiomas',
+        languagePt: 'Português — Nativo',
+        languageEn: 'Inglês — Avançado (Leitura/escrita) · Intermediário (Conversação)'
       },
       projects: {
         tag: 'Projetos',
@@ -99,8 +96,6 @@
         p5: { title: 'Portfólio Digital V1', desc: 'Primeira versão do portfólio pessoal.' }
       },
       certificates: {
-        tag: 'Certificados',
-        title: 'Certificações e cursos',
         verify: 'Verificar certificado',
         c1: { title: 'Web Design Responsivo' },
         c2: { title: 'Montagem e Manutenção de Computadores' },
@@ -129,10 +124,8 @@
         about: 'About',
         experience: 'Experience',
         education: 'Education',
-        languages: 'Languages',
         skills: 'Skills',
         projects: 'Projects',
-        certificates: 'Certificates',
         contact: 'Contact'
       },
       hero: {
@@ -176,7 +169,9 @@
       },
       education: {
         tag: 'Education',
-        title: 'Academic background',
+        title: 'Education & Certifications',
+        subgroupAcademic: 'Academic',
+        subgroupCertificates: 'Certifications and courses',
         cs: {
           title: 'Bachelor of Computer Science',
           detail: 'With emphasis on Full Stack Dev',
@@ -184,22 +179,19 @@
         },
         tech: { title: 'Business Administration Technician' }
       },
-      languages: {
-        tag: 'Languages',
-        title: 'Languages',
-        pt: { name: 'Portuguese', level: 'Native' },
-        en: { name: 'English', level: 'Advanced', detail: 'Reading/Writing: Advanced · Speaking: Intermediate' }
-      },
       skills: {
         tag: 'Skills',
-        title: 'Technologies and tools',
+        title: 'Skills & Languages',
         frontend: 'Front-End',
         backend: 'Back-End & Databases',
         tools: 'DevOps & APIs',
         design: 'UX/UI',
         wireframes: 'Wireframes',
         prototyping: 'Prototyping',
-        accessibility: 'Accessibility'
+        accessibility: 'Accessibility',
+        languages: 'Languages',
+        languagePt: 'Portuguese — Native',
+        languageEn: 'English — Advanced (Reading/Writing) · Intermediate (Speaking)'
       },
       projects: {
         tag: 'Projects',
@@ -217,8 +209,6 @@
         p5: { title: 'Digital Portfolio V1', desc: 'First version of the personal portfolio.' }
       },
       certificates: {
-        tag: 'Certificates',
-        title: 'Certifications and courses',
         verify: 'Verify certificate',
         c1: { title: 'Responsive Web Design' },
         c2: { title: 'Computer Assembly and Maintenance' },
@@ -247,10 +237,8 @@
         about: 'Sobre mí',
         experience: 'Experiencia',
         education: 'Formación',
-        languages: 'Idiomas',
         skills: 'Skills',
         projects: 'Proyectos',
-        certificates: 'Certificados',
         contact: 'Contacto'
       },
       hero: {
@@ -294,7 +282,9 @@
       },
       education: {
         tag: 'Formación',
-        title: 'Formación académica',
+        title: 'Formación & Certificaciones',
+        subgroupAcademic: 'Académica',
+        subgroupCertificates: 'Certificaciones y cursos',
         cs: {
           title: 'Licenciatura en Ciencias de la Computación',
           detail: 'Con énfasis en Full Stack Dev',
@@ -302,22 +292,19 @@
         },
         tech: { title: 'Técnico en Administración' }
       },
-      languages: {
-        tag: 'Idiomas',
-        title: 'Idiomas',
-        pt: { name: 'Portugués', level: 'Nativo' },
-        en: { name: 'Inglés', level: 'Avanzado', detail: 'Lectura/escritura: Avanzado · Conversación: Intermedio' }
-      },
       skills: {
         tag: 'Skills',
-        title: 'Tecnologías y herramientas',
+        title: 'Skills & Idiomas',
         frontend: 'Front-End',
         backend: 'Back-End y Bases de Datos',
         tools: 'DevOps y APIs',
         design: 'UX/UI',
         wireframes: 'Wireframes',
         prototyping: 'Prototipado',
-        accessibility: 'Accesibilidad'
+        accessibility: 'Accesibilidad',
+        languages: 'Idiomas',
+        languagePt: 'Portugués — Nativo',
+        languageEn: 'Inglés — Avanzado (Lectura/escritura) · Intermedio (Conversación)'
       },
       projects: {
         tag: 'Proyectos',
@@ -335,8 +322,6 @@
         p5: { title: 'Portafolio Digital V1', desc: 'Primera versión del portafolio personal.' }
       },
       certificates: {
-        tag: 'Certificados',
-        title: 'Certificaciones y cursos',
         verify: 'Verificar certificado',
         c1: { title: 'Diseño Web Responsive' },
         c2: { title: 'Ensamblaje y Mantenimiento de Computadoras' },
