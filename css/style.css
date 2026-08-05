@@ -1194,6 +1194,14 @@ strong {
   flex-grow: 1;
 }
 
+.certificate-period {
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
 .certificate-link {
   font-size: 0.82rem;
   font-weight: 500;

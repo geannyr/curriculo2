@@ -2,8 +2,8 @@
   const translations = {
     pt: {
       meta: {
-        title: 'Geanny Rodrigues | Desenvolvedora Full-Stack',
-        description: 'Portfólio de Geanny Rodrigues — Desenvolvedora Full-Stack com experiência em Java, Spring Boot e React.'
+        title: 'Geanny Rodrigues | Desenvolvedora Full Stack Java',
+        description: 'Portfólio de Geanny Rodrigues — Desenvolvedora Full Stack Java com experiência em ERP, integrações e sistemas financeiros e fiscais.'
       },
       cv: { url: 'docs/CurriculumGeanny.pdf' },
       nav: {
@@ -11,21 +11,21 @@
         about: 'Sobre',
         experience: 'Experiência',
         education: 'Formação',
-        skills: 'Skills',
+        skills: 'Competências',
         projects: 'Projetos',
         contact: 'Contato'
       },
       hero: {
-        role: 'Desenvolvedora Full-Stack',
-        meta: 'Java · Spring Boot · React · UX',
+        role: 'Desenvolvedora Full Stack Java',
+        meta: 'ERP · Integrações · Sistemas Financeiros e Fiscais',
         cta: { cv: 'Download CV', contact: 'Entre em contato' },
         status: 'Disponível para oportunidades'
       },
       about: {
         tag: 'Sobre mim',
         title: 'Sobre',
-        p1: 'Desenvolvedora Full-Stack com formação em <strong>Ciência da Computação</strong> e experiência em <strong>Java, Spring Boot e React</strong>, atuando no desenvolvimento e manutenção de <strong>ERP industrial</strong> na Nomus. Histórico em análise e correção de bugs, otimização de performance e implementação de funcionalidades orientada por métricas.',
-        p2: 'Tenho noções práticas de <strong>UX</strong> (Figma, wireframes, acessibilidade) e foco em boas práticas, código organizado e melhoria contínua. Busco contribuir com entregas de qualidade e evoluir como profissional.',
+        p1: 'Desenvolvedora de Software Full Stack com formação em Ciência da Computação e pós-graduação em Desenvolvimento Full Stack. Experiência no desenvolvimento e manutenção de ERP industrial utilizando Java, JavaScript, React, SQL e MySQL, com atuação em módulos fiscais, financeiros e integrações bancárias.',
+        p2: 'Vivência na investigação de problemas complexos, análise de regras de negócio, correção de falhas em sistemas legados e implementação de funcionalidades de ponta a ponta. Experiência com Hibernate, APIs, processamento de arquivos bancários, Git, SVN e criação de protótipos no Figma.',
         competencies: {
           title: 'Competências',
           flex: 'Flexibilidade e adaptação',
@@ -43,10 +43,10 @@
         companyAuto: 'AutoCraft · Remoto',
         periodAuto: 'Ago 2025 — Presente',
         descAuto: 'Atuação paralela na AutoCraft com foco em <strong>Front-end e automações</strong>. Colaboração na construção de funcionalidades de UI/UX, apps desktop e extensões de produtos como <strong>EZ Native</strong> (deploy automatizado para App Store/Play Store), <strong>Viddz</strong> (video messaging com CTAs interativas), <strong>CREDistributors</strong> (e-commerce) e <strong>Leap Labour</strong> (transformação digital com FlutterFlow + n8n).',
-        role1: 'Desenvolvedora Full-Stack Júnior',
+        role1: 'Desenvolvedora Full Stack Júnior',
         period1: 'Set 2024 — Presente',
-        desc1: 'Desenvolvimento e manutenção de funcionalidades em ERP industrial (Java 8/17, Spring Boot, React), com foco em usabilidade, performance e estabilidade. Análise e correção de bugs críticos, implementação de novas funcionalidades orientada por métricas, code reviews com Git e SVN, e criação de wireframes no Figma para validação de UX antes da implementação.',
-        role2: 'Estagiária em Desenvolvimento Java',
+        desc1: 'Desenvolvimento e manutenção de funcionalidades de ponta a ponta em <strong>ERP industrial</strong>, utilizando Java, JavaScript, JSP, React, Hibernate e MySQL. Atuação em módulos financeiros e fiscais, incluindo adequações relacionadas a IBS/CBS, e em integrações bancárias com processamento de arquivos. Investigação de bugs por meio da análise de código, logs, SQL e arquivos de integração, além da manutenção do sistema legado. Uso de Git e SVN no controle de versão e Figma na criação de protótipos.',
+        role2: 'Estagiária de Desenvolvimento',
         period2: 'Jun 2023 — Set 2024',
         desc2: 'Auxílio no desenvolvimento e análise de sistemas: implementação de melhorias, correção de bugs e desenvolvimento de APIs REST com Java 8. Trabalho com JavaScript e jQuery no front-end para suporte a demandas internas.',
         role3: 'Analista de Atendimento',
@@ -59,20 +59,34 @@
         title: 'Formação & Certificações',
         subgroupAcademic: 'Acadêmica',
         subgroupCertificates: 'Certificações e cursos',
+        postgrad: {
+          title: 'Pós-Graduação em Desenvolvimento Full Stack',
+          detail: 'Carga horária: 360 horas',
+          period: 'Nov/2025 — Jul/2026'
+        },
         cs: {
           title: 'Bacharelado em Ciência da Computação',
           detail: 'Com ênfase em Full Stack Dev',
-          period: '2021 — 2025 (Conclusão em Out/2025)'
+          period: '2021 — 2025 · Concluído em 2025'
         },
         tech: { title: 'Técnico em Administração' }
       },
       skills: {
-        tag: 'Skills',
-        title: 'Skills & Idiomas',
-        frontend: 'Front-End',
-        backend: 'Back-End & Banco',
-        tools: 'DevOps & APIs',
-        design: 'UX/UI',
+        tag: 'Competências',
+        title: 'Competências & Idiomas',
+        backend: 'Back-end',
+        frontend: 'Front-end',
+        database: 'Banco de dados',
+        tools: 'Ferramentas',
+        integrations: 'Integrações',
+        businessDomains: 'Domínios de negócio',
+        bankIntegrations: 'Integrações bancárias',
+        bankFiles: 'Arquivos bancários',
+        industrialErp: 'ERP industrial',
+        financialModules: 'Módulos financeiros',
+        taxModules: 'Módulos fiscais',
+        businessRules: 'Regras de negócio',
+        legacySystems: 'Sistemas legados',
         wireframes: 'Wireframes',
         prototyping: 'Prototipação',
         accessibility: 'Acessibilidade',
@@ -115,8 +129,8 @@
 
     en: {
       meta: {
-        title: 'Geanny Rodrigues | Full-Stack Developer',
-        description: 'Geanny Rodrigues’ portfolio — Full-Stack Developer with experience in Java, Spring Boot and React.'
+        title: 'Geanny Rodrigues | Java Full-Stack Developer',
+        description: 'Geanny Rodrigues’ portfolio — Java Full-Stack Developer experienced in ERP, integrations, and financial and tax systems.'
       },
       cv: { url: 'docs/GeannyRodriguesEN.pdf' },
       nav: {
@@ -129,16 +143,16 @@
         contact: 'Contact'
       },
       hero: {
-        role: 'Full-Stack Developer',
-        meta: 'Java · Spring Boot · React · UX',
+        role: 'Java Full-Stack Developer',
+        meta: 'ERP · Integrations · Financial and Tax Systems',
         cta: { cv: 'Download CV', contact: 'Get in touch' },
         status: 'Open to opportunities'
       },
       about: {
         tag: 'About me',
         title: 'About',
-        p1: 'Full-Stack Developer with a <strong>Computer Science</strong> degree and hands-on experience with <strong>Java, Spring Boot and React</strong>, building and maintaining an <strong>industrial ERP</strong> at Nomus. Track record in bug analysis and resolution, performance optimization, and feature implementation driven by metrics.',
-        p2: 'Practical knowledge of <strong>UX</strong> (Figma, wireframes, accessibility) and a focus on clean code, automated testing, and continuous improvement. Committed to delivering quality and growing as a professional.',
+        p1: 'Full Stack Software Developer with a degree in Computer Science and a postgraduate degree in Full Stack Development. Experience developing and maintaining industrial ERP systems using Java, JavaScript, React, SQL and MySQL, working with tax and financial modules and banking integrations.',
+        p2: 'Experienced in investigating complex problems, analyzing business rules, fixing issues in legacy systems and implementing end-to-end features. Experience with Hibernate, APIs, bank file processing, Git, SVN and creating prototypes in Figma.',
         competencies: {
           title: 'Soft Skills',
           flex: 'Flexibility and adaptability',
@@ -156,10 +170,10 @@
         companyAuto: 'AutoCraft · Remote',
         periodAuto: 'Aug 2025 — Present',
         descAuto: 'Parallel role at AutoCraft focused on <strong>Front-end and automation</strong>. Collaboration on UI/UX features, desktop apps and product extensions across <strong>EZ Native</strong> (automated deployment to App Store/Play Store), <strong>Viddz</strong> (video messaging with interactive CTAs), <strong>CREDistributors</strong> (e-commerce) and <strong>Leap Labour</strong> (digital transformation with FlutterFlow + n8n).',
-        role1: 'Junior Full-Stack Developer',
+        role1: 'Junior Full Stack Developer',
         period1: 'Sep 2024 — Present',
-        desc1: 'Develop and maintain features for an industrial ERP system (Java 8/17, Spring Boot, React), with focus on usability, performance and stability. Analyze and resolve critical bugs, implement new features driven by metrics, participate in code reviews with Git and SVN, and create Figma wireframes for UX validation prior to implementation.',
-        role2: 'Java Development Intern',
+        desc1: 'End-to-end feature development and maintenance in an <strong>industrial ERP</strong> using Java, JavaScript, JSP, React, Hibernate and MySQL. Work on financial and tax modules, including IBS/CBS-related adaptations, and banking integrations involving file processing. Bug investigation through code, log, SQL and integration-file analysis, as well as legacy-system maintenance. Git and SVN for version control and Figma for prototyping.',
+        role2: 'Development Intern',
         period2: 'Jun 2023 — Sep 2024',
         desc2: 'Supported systems development and analysis: implementing improvements, fixing bugs and building REST APIs with Java 8. Worked with JavaScript and jQuery on the front-end to support internal demands.',
         role3: 'Support Analyst',
@@ -172,20 +186,34 @@
         title: 'Education & Certifications',
         subgroupAcademic: 'Academic',
         subgroupCertificates: 'Certifications and courses',
+        postgrad: {
+          title: 'Postgraduate Degree in Full Stack Development',
+          detail: 'Workload: 360 hours',
+          period: 'Nov 2025 — Jul 2026'
+        },
         cs: {
           title: 'Bachelor of Computer Science',
           detail: 'With emphasis on Full Stack Dev',
-          period: '2021 — 2025 (Expected: Oct 2025)'
+          period: '2021 — 2025 · Completed in 2025'
         },
         tech: { title: 'Business Administration Technician' }
       },
       skills: {
         tag: 'Skills',
         title: 'Skills & Languages',
-        frontend: 'Front-End',
-        backend: 'Back-End & Databases',
-        tools: 'DevOps & APIs',
-        design: 'UX/UI',
+        backend: 'Back-end',
+        frontend: 'Front-end',
+        database: 'Databases',
+        tools: 'Tools',
+        integrations: 'Integrations',
+        businessDomains: 'Business domains',
+        bankIntegrations: 'Banking integrations',
+        bankFiles: 'Bank files',
+        industrialErp: 'Industrial ERP',
+        financialModules: 'Financial modules',
+        taxModules: 'Tax modules',
+        businessRules: 'Business rules',
+        legacySystems: 'Legacy systems',
         wireframes: 'Wireframes',
         prototyping: 'Prototyping',
         accessibility: 'Accessibility',
@@ -228,8 +256,8 @@
 
     es: {
       meta: {
-        title: 'Geanny Rodrigues | Desarrolladora Full-Stack',
-        description: 'Portafolio de Geanny Rodrigues — Desarrolladora Full-Stack con experiencia en Java, Spring Boot y React.'
+        title: 'Geanny Rodrigues | Desarrolladora Full Stack Java',
+        description: 'Portafolio de Geanny Rodrigues — Desarrolladora Full Stack Java con experiencia en ERP, integraciones y sistemas financieros y fiscales.'
       },
       cv: { url: 'docs/CurriculumGeanny.pdf' },
       nav: {
@@ -237,21 +265,21 @@
         about: 'Sobre mí',
         experience: 'Experiencia',
         education: 'Formación',
-        skills: 'Skills',
+        skills: 'Competencias',
         projects: 'Proyectos',
         contact: 'Contacto'
       },
       hero: {
-        role: 'Desarrolladora Full-Stack',
-        meta: 'Java · Spring Boot · React · UX',
+        role: 'Desarrolladora Full Stack Java',
+        meta: 'ERP · Integraciones · Sistemas Financieros y Fiscales',
         cta: { cv: 'Descargar CV', contact: 'Contáctame' },
         status: 'Disponible para oportunidades'
       },
       about: {
         tag: 'Sobre mí',
         title: 'Sobre mí',
-        p1: 'Desarrolladora Full-Stack con formación en <strong>Ciencias de la Computación</strong> y experiencia en <strong>Java, Spring Boot y React</strong>, desarrollando y manteniendo un <strong>ERP industrial</strong> en Nomus. Trayectoria en análisis y corrección de bugs, optimización de rendimiento e implementación de funcionalidades orientada a métricas.',
-        p2: 'Con conocimientos prácticos de <strong>UX</strong> (Figma, wireframes, accesibilidad) y enfoque en buenas prácticas, código limpio y mejora continua. Comprometida con entregas de calidad y con crecer como profesional.',
+        p1: 'Desarrolladora de Software Full Stack con formación en Ciencias de la Computación y posgrado en Desarrollo Full Stack. Experiencia en el desarrollo y mantenimiento de ERP industrial utilizando Java, JavaScript, React, SQL y MySQL, con actuación en módulos fiscales, financieros e integraciones bancarias.',
+        p2: 'Experiencia en la investigación de problemas complejos, análisis de reglas de negocio, corrección de fallas en sistemas legados e implementación de funcionalidades de punta a punta. Experiencia con Hibernate, APIs, procesamiento de archivos bancarios, Git, SVN y creación de prototipos en Figma.',
         competencies: {
           title: 'Competencias',
           flex: 'Flexibilidad y adaptación',
@@ -269,10 +297,10 @@
         companyAuto: 'AutoCraft · Remoto',
         periodAuto: 'Ago 2025 — Presente',
         descAuto: 'Rol paralelo en AutoCraft con foco en <strong>Front-end y automatizaciones</strong>. Colaboración en funcionalidades de UI/UX, apps de escritorio y extensiones de productos como <strong>EZ Native</strong> (despliegue automatizado a App Store/Play Store), <strong>Viddz</strong> (video messaging con CTAs interactivas), <strong>CREDistributors</strong> (e-commerce) y <strong>Leap Labour</strong> (transformación digital con FlutterFlow + n8n).',
-        role1: 'Desarrolladora Full-Stack Júnior',
+        role1: 'Desarrolladora Full Stack Júnior',
         period1: 'Sep 2024 — Presente',
-        desc1: 'Desarrollo y mantenimiento de funcionalidades en ERP industrial (Java 8/17, Spring Boot, React), con foco en usabilidad, rendimiento y estabilidad. Análisis y corrección de bugs críticos, implementación de nuevas funcionalidades orientada a métricas, code reviews con Git y SVN, y creación de wireframes en Figma para validación de UX antes de la implementación.',
-        role2: 'Pasante de Desarrollo Java',
+        desc1: 'Desarrollo y mantenimiento de funcionalidades de punta a punta en un <strong>ERP industrial</strong>, utilizando Java, JavaScript, JSP, React, Hibernate y MySQL. Actuación en módulos financieros y fiscales, incluidas adecuaciones relacionadas con IBS/CBS, y en integraciones bancarias con procesamiento de archivos. Investigación de bugs mediante el análisis de código, logs, SQL y archivos de integración, además del mantenimiento del sistema legado. Uso de Git y SVN para el control de versiones y Figma para la creación de prototipos.',
+        role2: 'Pasante de Desarrollo',
         period2: 'Jun 2023 — Sep 2024',
         desc2: 'Apoyo en el desarrollo y análisis de sistemas: implementación de mejoras, corrección de bugs y desarrollo de APIs REST con Java 8. Trabajo con JavaScript y jQuery en el front-end para soporte a demandas internas.',
         role3: 'Analista de Atención',
@@ -285,20 +313,34 @@
         title: 'Formación & Certificaciones',
         subgroupAcademic: 'Académica',
         subgroupCertificates: 'Certificaciones y cursos',
+        postgrad: {
+          title: 'Posgrado en Desarrollo Full Stack',
+          detail: 'Carga horaria: 360 horas',
+          period: 'Nov/2025 — Jul/2026'
+        },
         cs: {
           title: 'Licenciatura en Ciencias de la Computación',
           detail: 'Con énfasis en Full Stack Dev',
-          period: '2021 — 2025 (Conclusión: Oct/2025)'
+          period: '2021 — 2025 · Concluido en 2025'
         },
         tech: { title: 'Técnico en Administración' }
       },
       skills: {
-        tag: 'Skills',
-        title: 'Skills & Idiomas',
-        frontend: 'Front-End',
-        backend: 'Back-End y Bases de Datos',
-        tools: 'DevOps y APIs',
-        design: 'UX/UI',
+        tag: 'Competencias',
+        title: 'Competencias & Idiomas',
+        backend: 'Back-end',
+        frontend: 'Front-end',
+        database: 'Bases de datos',
+        tools: 'Herramientas',
+        integrations: 'Integraciones',
+        businessDomains: 'Dominios de negocio',
+        bankIntegrations: 'Integraciones bancarias',
+        bankFiles: 'Archivos bancarios',
+        industrialErp: 'ERP industrial',
+        financialModules: 'Módulos financieros',
+        taxModules: 'Módulos fiscales',
+        businessRules: 'Reglas de negocio',
+        legacySystems: 'Sistemas legados',
         wireframes: 'Wireframes',
         prototyping: 'Prototipado',
         accessibility: 'Accesibilidad',

@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, {
-    threshold: 0.2,
+    threshold: 0,
     rootMargin: '-80px 0px -50% 0px'
   });
 
