@@ -18,8 +18,9 @@
       hero: {
         role: 'Desenvolvedora Full Stack Java',
         meta: 'ERP · Integrações · Sistemas Financeiros e Fiscais',
-        cta: { cv: 'Download CV', contact: 'Entre em contato' },
-        status: 'Disponível para oportunidades'
+        cta: { cv: 'Baixar currículo', contact: 'Entre em contato' },
+        status: 'Disponível para oportunidades',
+        scroll: 'Conheça minha trajetória'
       },
       about: {
         tag: 'Sobre mim',
@@ -146,7 +147,8 @@
         role: 'Java Full-Stack Developer',
         meta: 'ERP · Integrations · Financial and Tax Systems',
         cta: { cv: 'Download CV', contact: 'Get in touch' },
-        status: 'Open to opportunities'
+        status: 'Open to opportunities',
+        scroll: 'Explore my journey'
       },
       about: {
         tag: 'About me',
@@ -272,8 +274,9 @@
       hero: {
         role: 'Desarrolladora Full Stack Java',
         meta: 'ERP · Integraciones · Sistemas Financieros y Fiscales',
-        cta: { cv: 'Descargar CV', contact: 'Contáctame' },
-        status: 'Disponible para oportunidades'
+        cta: { cv: 'Descargar currículum', contact: 'Contáctame' },
+        status: 'Disponible para oportunidades',
+        scroll: 'Conoce mi trayectoria'
       },
       about: {
         tag: 'Sobre mí',
