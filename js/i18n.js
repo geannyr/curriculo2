@@ -101,9 +101,14 @@
         code: 'Código',
         demo: 'Demo',
         clientWork: 'Trabalhos com clientes',
+        landing: 'Projetos de landing pages',
         personal: 'Projetos pessoais',
         viddz: { desc: 'Ferramenta de video messaging com CTAs clicáveis dentro do player. Colaboração em funcionalidades de UI/UX na AutoCraft.' },
         eznative: { desc: 'Plataforma que automatiza o caminho do repositório à App Store / Play Store. Contribuição com extensões e melhorias de UX na AutoCraft.' },
+        landingPortfolio: {
+          title: 'Landing Pages Portfolio',
+          desc: 'Catálogo de modelos de landing pages para diferentes segmentos, com foco em conversão, acessibilidade, responsividade e qualidade técnica.'
+        },
         p1: { title: 'GitFinder', desc: 'Buscador de perfil do GitHub com repositórios recentes e suporte a 3 idiomas. Vanilla JS, sem build.' },
         p2: { desc: 'Gerenciador de tarefas com filtros, contadores em tempo real e suporte a 3 idiomas. React + Tailwind.' },
         p3: { title: 'Calculadora de IMC', desc: 'Calculadora de Índice de Massa Corporal com interface intuitiva.' },
@@ -229,9 +234,14 @@
         code: 'Code',
         demo: 'Demo',
         clientWork: 'Client work',
+        landing: 'Landing page projects',
         personal: 'Personal projects',
         viddz: { desc: 'Video messaging tool with clickable CTAs inside the player. Collaboration on UI/UX features at AutoCraft.' },
         eznative: { desc: 'Platform that automates the path from repo to App Store / Play Store. Contributed extensions and UX improvements at AutoCraft.' },
+        landingPortfolio: {
+          title: 'Landing Pages Portfolio',
+          desc: 'Catalog of landing page models for different segments, focused on conversion, accessibility, responsiveness and technical quality.'
+        },
         p1: { title: 'GitFinder', desc: 'GitHub profile finder with recent repositories and 3-language support. Vanilla JS, no build.' },
         p2: { desc: 'Task manager with filters, live counters and 3-language support. React + Tailwind.' },
         p3: { title: 'BMI Calculator', desc: 'Body Mass Index calculator with intuitive interface.' },
@@ -357,9 +367,14 @@
         code: 'Código',
         demo: 'Demo',
         clientWork: 'Trabajos con clientes',
+        landing: 'Proyectos de landing pages',
         personal: 'Proyectos personales',
         viddz: { desc: 'Herramienta de video messaging con CTAs clicables dentro del player. Colaboración en funcionalidades de UI/UX en AutoCraft.' },
         eznative: { desc: 'Plataforma que automatiza el camino del repositorio a la App Store / Play Store. Contribución con extensiones y mejoras de UX en AutoCraft.' },
+        landingPortfolio: {
+          title: 'Landing Pages Portfolio',
+          desc: 'Catálogo de modelos de landing pages para diferentes segmentos, con foco en conversión, accesibilidad, responsividad y calidad técnica.'
+        },
         p1: { title: 'GitFinder', desc: 'Buscador de perfiles GitHub con repositorios recientes y soporte a 3 idiomas. Vanilla JS, sin build.' },
         p2: { desc: 'Gestor de tareas con filtros, contadores en tiempo real y soporte a 3 idiomas. React + Tailwind.' },
         p3: { title: 'Calculadora de IMC', desc: 'Calculadora de Índice de Masa Corporal con interfaz intuitiva.' },
